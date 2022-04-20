@@ -2,9 +2,25 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Scripts to run the Project
+1. Do npm install (npm install)
+2. Start the json server by (npx json-server --watch data/data.json --port 8000)
+3. Rum the project (npm start)
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+This will install all the dependencies like react-router-dom and react-select.
+
+### `npx json-server --watch data/data.json --port 8000`
+
+This command will be used to create a RestFul JSON server which will watch the file given.
+It will provide end points to interact with the data. Please use port as 8000.
+
+This will install all the dependencies like react-router-dom and react-select.
 
 ### `npm start`
 

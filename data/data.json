@@ -62,23 +62,12 @@
         "Bug"
       ],
       "createdBy": 1,
-      "votes": 5,
+      "votes": 8,
       "date": 1650428377919,
       "id": 6
     }
   ],
   "ideas": [
-    {
-      "title": "Add creator to ideas and challeges",
-      "description": "Add who created the challange or the ides",
-      "tags": [
-        "high"
-      ],
-      "votes": 162,
-      "date": 1650391489267,
-      "createdBy": 1234,
-      "id": 1
-    },
     {
       "title": "Search input by enter",
       "description": "Enter button should work for search button",
@@ -122,6 +111,41 @@
       "votes": 5,
       "date": 1650441409812,
       "id": 8
+    },
+    {
+      "title": "Login Details",
+      "description": "Login details consists of password and in and throws error too.",
+      "tags": [
+        "Feature"
+      ],
+      "createdBy": 1234,
+      "votes": 0,
+      "date": 1650449755115,
+      "id": 9
+    },
+    {
+      "title": "Two tabs ",
+      "description": "We have two tabs to navigate between Challenges and Ideas",
+      "tags": [
+        "Feature",
+        "Custom"
+      ],
+      "createdBy": 1234,
+      "votes": 0,
+      "date": 1650449815187,
+      "id": 10
+    },
+    {
+      "title": "Delete button",
+      "description": "User can delete the ideas/challenges created by him",
+      "tags": [
+        "Feature",
+        "High"
+      ],
+      "createdBy": 1234,
+      "votes": 0,
+      "date": 1650449845123,
+      "id": 11
     }
   ]
 }
