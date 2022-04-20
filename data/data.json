@@ -65,6 +65,20 @@
       "votes": 8,
       "date": 1650428377919,
       "id": 6
+    },
+    {
+      "title": "more than 2 tags",
+      "description": "sadgfh",
+      "tags": [
+        "Feature",
+        "Dependency",
+        "High",
+        "Custom"
+      ],
+      "createdBy": 12,
+      "votes": 0,
+      "date": 1650454158228,
+      "id": 7
     }
   ],
   "ideas": [
@@ -86,7 +100,7 @@
         "Feature"
       ],
       "createdBy": 1,
-      "votes": 6,
+      "votes": 9,
       "date": 1650428275858,
       "id": 5
     },
@@ -97,7 +111,7 @@
         "Feature"
       ],
       "createdBy": 1,
-      "votes": 3,
+      "votes": 32,
       "date": 1650434557185,
       "id": 6
     },
@@ -108,7 +122,7 @@
         "Feature"
       ],
       "createdBy": 12345,
-      "votes": 5,
+      "votes": 12,
       "date": 1650441409812,
       "id": 8
     },
@@ -119,7 +133,7 @@
         "Feature"
       ],
       "createdBy": 1234,
-      "votes": 0,
+      "votes": 17,
       "date": 1650449755115,
       "id": 9
     },
@@ -131,7 +145,7 @@
         "Custom"
       ],
       "createdBy": 1234,
-      "votes": 0,
+      "votes": 6,
       "date": 1650449815187,
       "id": 10
     },
@@ -143,7 +157,7 @@
         "High"
       ],
       "createdBy": 1234,
-      "votes": 0,
+      "votes": 48,
       "date": 1650449845123,
       "id": 11
     }

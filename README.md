@@ -1,11 +1,9 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started with Hack Ideas App By ScripBox
 
 ## Scripts to run the Project
 1. Do npm install (npm install)
 2. Start the json server by (npx json-server --watch data/data.json --port 8000)
-3. Rum the project (npm start)
+3. In a new terminal run the project (npm start)
 
 ## Available Scripts
 
@@ -17,8 +15,9 @@ This will install all the dependencies like react-router-dom and react-select.
 
 ### `npx json-server --watch data/data.json --port 8000`
 
-This command will be used to create a RestFul JSON server which will watch the file given.
-It will provide end points to interact with the data. Please use port as 8000.
+Please open a new terminal and run this command. This command will be used to create 
+a RestFul JSON server which will watch the file given. It will provide end points to 
+interact with the data. Please use port as 8000.
 
 This will install all the dependencies like react-router-dom and react-select.
 
