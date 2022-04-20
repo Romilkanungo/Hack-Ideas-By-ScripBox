@@ -67,17 +67,14 @@
       "id": 6
     },
     {
-      "title": "more than 2 tags",
-      "description": "sadgfh",
+      "title": "Last Test Challenge",
+      "description": "Description for last test",
       "tags": [
-        "Feature",
-        "Dependency",
-        "High",
-        "Custom"
+        "Task"
       ],
       "createdBy": 12,
       "votes": 0,
-      "date": 1650454158228,
+      "date": 1650455085474,
       "id": 7
     }
   ],

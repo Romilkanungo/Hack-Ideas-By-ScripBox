@@ -22,7 +22,6 @@ function DetailsList(props) {
           return response.json();
         })
         .then( (details) => {
-          console.log('details',details)
           setDetails(details);
           setSortedDetails(details);
         });
@@ -118,11 +117,6 @@ function DetailsList(props) {
 
   // This function will be used to upvote a details
   const upVoteDetail = (e, detail) => {
-    let serachValue = document.getElementById('searchInput').value ;
-    let sortValue= document.getElementById('sortDetails').value ;
-
-    console.log(sortValue,serachValue);
-
     let detailToUpdate = {...detail};
     detailToUpdate.votes = detailToUpdate.votes + 1;
     
