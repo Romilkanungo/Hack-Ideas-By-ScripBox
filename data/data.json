@@ -28,7 +28,7 @@
       "tags": [
         "tech"
       ],
-      "votes": 14,
+      "votes": 31,
       "date": 1650359123456,
       "createdBy": 12,
       "id": 2
@@ -40,7 +40,7 @@
         "Feature"
       ],
       "createdBy": 123,
-      "votes": 17,
+      "votes": 24,
       "date": 1650379036209,
       "id": 4
     },
@@ -62,7 +62,7 @@
         "Bug"
       ],
       "createdBy": 1,
-      "votes": 4,
+      "votes": 5,
       "date": 1650428377919,
       "id": 6
     }
@@ -74,21 +74,10 @@
       "tags": [
         "high"
       ],
-      "votes": 157,
+      "votes": 162,
       "date": 1650391489267,
       "createdBy": 1234,
       "id": 1
-    },
-    {
-      "title": "List Down ideas and challenges seperately",
-      "description": "All the ideas and challenges need to be listed down seperately",
-      "tags": [
-        "specific"
-      ],
-      "votes": 75,
-      "date": 1650367652983,
-      "createdBy": 12345,
-      "id": 2
     },
     {
       "title": "Search input by enter",
@@ -97,7 +86,7 @@
         "Feature"
       ],
       "createdBy": 123,
-      "votes": 10,
+      "votes": 11,
       "date": 1650378087239,
       "id": 3
     },
@@ -119,9 +108,20 @@
         "Feature"
       ],
       "createdBy": 1,
-      "votes": 2,
+      "votes": 3,
       "date": 1650434557185,
       "id": 6
+    },
+    {
+      "title": "No Results",
+      "description": "No results text will be shown when no results found in text search or my details.",
+      "tags": [
+        "Feature"
+      ],
+      "createdBy": 12345,
+      "votes": 5,
+      "date": 1650441409812,
+      "id": 8
     }
   ]
 }

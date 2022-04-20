@@ -11,6 +11,7 @@ function DetailsList(props) {
   useEffect ( () => {
     fetchDetails(props.detailOf);
     setDelete(false);
+    resetSearchSort();
   },[props.detailOf]);
 
   // This function would be used to initially get all the ideas and challanges from the json server
@@ -21,6 +22,7 @@ function DetailsList(props) {
           return response.json();
         })
         .then( (details) => {
+          console.log('details',details)
           setDetails(details);
           setSortedDetails(details);
         });
@@ -116,10 +118,14 @@ function DetailsList(props) {
 
   // This function will be used to upvote a details
   const upVoteDetail = (e, detail) => {
+    let serachValue = document.getElementById('searchInput').value ;
+    let sortValue= document.getElementById('sortDetails').value ;
+
+    console.log(sortValue,serachValue);
 
     let detailToUpdate = {...detail};
-    detailToUpdate.votes +=1;
-
+    detailToUpdate.votes = detailToUpdate.votes + 1;
+    
     if(props.detailOf === 'Challanges'){
       fetch('http://localhost:8000/challenges/'+ detail.id, {
             method: 'PUT',
@@ -128,6 +134,11 @@ function DetailsList(props) {
                 'Content-Type': 'application/json' 
             },
             body: JSON.stringify(detailToUpdate)
+        })
+        .then(res => res.json()) 
+        .then(res => {
+          fetchDetails(props.detailOf)
+          resetSearchSort();
         })
     }
     else if( props.detailOf === 'Ideas'){
@@ -139,8 +150,12 @@ function DetailsList(props) {
           },
           body: JSON.stringify(detailToUpdate)
         })
-    }
-    fetchDetails(props.detailOf);  
+        .then(res => res.json()) 
+        .then(res => {
+          fetchDetails(props.detailOf)
+          resetSearchSort();
+        })
+    }  
   }
 
   // This function will be used to delete the idea/challanges 
@@ -163,6 +178,12 @@ function DetailsList(props) {
   const getAllListings = () => {
     setSortedDetails(details);
     setDelete(false);
+  }
+
+  // This function will be used to empty search input and sort when the tab is changed
+  const resetSearchSort = () =>{
+    document.getElementById('searchInput').value = "";
+    document.getElementById('sortDetails').value = "";
   }
 
   // This function will be used to handle the enter keyword press
@@ -189,6 +210,9 @@ function DetailsList(props) {
           </div>
           
         </div>
+        {
+          !sortedDetails.length && <div className='DetailsList__NoDetailsFound'> No Results Found </div>
+        }
         {
           sortedDetails.map( (detail,index) => {
             let dateFormatted =new Date(detail.date).toString().slice(0,25); 

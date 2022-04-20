@@ -5,6 +5,13 @@
     border-radius: 10px;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 }
+.DetailsList__Wrapper .DetailsList__NoDetailsFound{
+    color :red;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+    font-size: 18px;
+}
 .DetailsList__Wrapper .DetailsList__BottomRow {
     display: flex;
     flex-direction: row;

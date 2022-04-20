@@ -65,7 +65,7 @@ function AddDetails() {
         itemDetail.votes = 0 ;
         itemDetail.date = Date.now();
 
-        if(itemDetail.title && itemDetail.description && selectedTags){
+        if(itemDetail.title && itemDetail.description && selectedTags.length){
             if(activeTab === 'Challanges'){
                 fetch('http://localhost:8000/challenges', {
                     method: 'POST',
@@ -75,7 +75,11 @@ function AddDetails() {
                     },
                     body: JSON.stringify(itemDetail)
                 })
-                localStorage.setItem("activeTab", 'Challanges');
+                .then(res => res.json()) 
+                .then(res => {
+                    localStorage.setItem("activeTab", 'Challanges');
+                    window.location.replace('/home');
+                } )   
             }
             else if( activeTab === 'Ideas'){
                 fetch('http://localhost:8000/ideas', {
@@ -86,11 +90,13 @@ function AddDetails() {
                     },
                     body: JSON.stringify(itemDetail)
                 })
-                localStorage.setItem("activeTab", 'Ideas');
+                .then(res => res.json()) 
+                .then(res => {
+                    localStorage.setItem("activeTab", 'Ideas');
+                    window.location.replace('/home');
+                } )   
             }
-            window.location.replace('/home');
         }    
-        
     }
 
     return (
