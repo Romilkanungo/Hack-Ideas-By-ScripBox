@@ -1,0 +1,20 @@
+button {
+    border-radius: 10px;
+    background: #24a0ed;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:blue;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 12px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

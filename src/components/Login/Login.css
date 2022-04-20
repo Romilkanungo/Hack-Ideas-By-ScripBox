@@ -1,0 +1,59 @@
+.LoginPage__Wrapper{
+    background-color: #FBDA61;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    height:100vh;
+    overflow-y: hidden;
+}
+
+.LoginPage__Wrapper .LoginPage__HeaderText{
+    color:white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 0px;
+}
+
+.LoginPage__Wrapper .LoginPage__Container{
+    display: flex;
+    justify-content: center;
+}
+.LoginPage__Wrapper .LoginPage__Container .LoginPage__Card{
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%)!important;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    background: white;
+    border-radius: 10px;
+    width:25%;
+    margin-bottom:50px;
+}
+.LoginPage__Wrapper .LoginPage__Container .LoginPage__Card .LoginCard__Text {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+.LoginPage__Wrapper .LoginPage__Container .LoginPage__Card .LoginCard__Label{
+    margin: 15px 0px 7px 0px;
+}
+
+.LoginPage__Wrapper .LoginPage__Container .LoginPage__Card button{
+    margin-top: 25px;
+    padding: 12px 0px;
+    font-weight: bold;
+    border: none;
+}
+.LoginPage__Wrapper .LoginPage__Container .LoginPage__Card .LoginCard__Error{
+    color: #f02849;
+    font-weight: bold;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .LoginPage__Wrapper .LoginPage__Container .LoginPage__Card{
+        width: 70%;
+    }
+}
+

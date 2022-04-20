@@ -1,0 +1,67 @@
+.HomePage__Wrapper{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    height:100%;
+}
+
+.HomePage__Wrapper .HomePage__HeaderText{
+    color:black;
+    text-align: center;
+    padding: 30px;
+    margin-top: 0px;
+}
+
+.HomePage__Wrapper .HomePage__Container{
+    display: flex;
+    justify-content: center;
+}
+.HomePage__Wrapper .HomePage__Container .HomePage__Card{
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)!important;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    width:25%;
+    margin-bottom:50px;
+}
+
+.HomePage__Wrapper .HomePage__Container .HomePage__Card .HomeCard__Text{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.HomePage__Wrapper .HomePage__Container .HomePage__Card .HomePage__TabsContainer{
+    display: flex;
+    flex-direction:row;
+}
+.HomePage__Wrapper .HomePage__Container .HomePage__Card .HomePage__TabsContainer .activeTab{
+    background-color: darkblue;
+    color: white;
+}
+.HomePage__Wrapper .HomePage__Container .HomePage__Card .HomePage__TabsContainer .Tabs_Challanges {
+    margin-right: 10px;
+}
+.HomePage__Wrapper .HomePage__Container .HomePage__Card .HomePage__TabsContainer .HomePage__Tabs{
+    flex:1;
+    text-align: center;
+    border:1px solid black;
+    padding:5px 0px 8px 0px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .HomePage__Wrapper{
+        height:100%;
+    }
+    .HomePage__Wrapper .HomePage__HeaderText{
+        font-size: 25px;
+        padding: 10px 15px;
+    }
+    .HomePage__Wrapper .HomePage__Container .HomePage__Card{
+        width: 80%;
+        padding:15px 25px;
+    }
+}
+

@@ -1,0 +1,126 @@
+.DetailsList__Wrapper .SingleDetail__Conatiner{
+    margin-top: 15px;
+    border: 1px solid grey;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.DetailsList__Wrapper .DetailsList__BottomRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top:15px;
+}
+.DetailsList__Wrapper .DetailsList__BottomRow button{ 
+    background:#4CAF50;
+    padding: 7px 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.DetailsList__Wrapper .DetailsList__BottomRow button:hover{ 
+    background:green;
+}
+.DetailsList__Wrapper .SingleDetail__Conatiner  .SingleDetail_Title{
+    margin-bottom:5px;
+    font-style: italic;
+    font-weight: bold;
+    font-size:18px;
+}
+
+.DetailsList__Wrapper .SingleDetail__Conatiner .SingleDetail_DateAuthor{
+    display: flex;
+    flex-direction: column;
+    margin:5px 0px 10px 0px;
+}
+.DetailsList__Wrapper .SingleDetail__Conatiner .SingleDetail_TagUpvotes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.DetailsList__Wrapper .SingleDetail__Conatiner .SingleDetail_TitleDelete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.DetailsList__Wrapper .SingleDetail__Conatiner .SingleDetail_TitleDelete .SingleDetail_Delete{
+    border-radius: 10px;
+    background: red;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 3px 7px!important;
+}
+.DetailsList__Wrapper .SingleDetail__Conatiner .SingleDetail_TitleDelete .SingleDetail_Delete:hover{
+    background-color: #8B0000;
+}
+
+
+.DetailsList__Wrapper .SingleDetail__Conatiner .SingleDetail_TagUpvotes .SingleDetail_TagContainer{
+    display: flex;
+    flex-direction: row;
+}
+.DetailsList__Wrapper .SingleDetail__Conatiner .SingleDetail_TagUpvotes .SingleDetail_Tag{
+    color: white;
+    padding: 5px 10px 8px 10px;
+    background: darkblue;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+.DetailsList__Wrapper .DetailsList__SearchSort{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:25px;
+}
+
+.DetailsList__Wrapper .DetailsList__SearchSort .DetailsList__Search{
+    display: flex;
+    flex-direction: row;
+}
+
+.DetailsList__Wrapper .DetailsList__SearchSort .DetailsList__Search #searchButton {
+    padding: 0px 15px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: none;
+    font-weight: bold;
+}
+
+.DetailsList__Wrapper .DetailsList__SearchSort .DetailsList__Search #searchInput {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+}
+
+.DetailsList__Wrapper .DetailsList__SearchSort .DetailsList__Sort{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.DetailsList__Wrapper .DetailsList__SearchSort .DetailsList__Sort label{
+    flex:1;
+    padding-right:10px;
+}
+.DetailsList__Wrapper .DetailsList__SearchSort .DetailsList__Sort select{
+    flex:1 ;
+    padding:10px 2px;
+}
+
+@media screen and (max-width: 767px) {
+    .DetailsList__Wrapper .DetailsList__SearchSort .DetailsList__Sort{
+        height : 42px;
+        width: 50%;
+        margin-left: 20px;
+    }
+    .DetailsList__Wrapper .DetailsList__SearchSort .DetailsList__Sort label{
+        padding-right: 0px;
+    }
+    .DetailsList__Wrapper .DetailsList__SearchSort .DetailsList__Sort select{
+        padding: 12px 2px;
+    }
+}
+
